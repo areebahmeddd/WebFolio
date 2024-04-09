@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const menuIcon = document.getElementById("menuIcon");
     const navbarList = document.querySelector(".navbar ul");
     const jobTitleElement = document.getElementById("jobTitle");
@@ -8,24 +8,24 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     let glitchInterval;
 
-    menuIcon.addEventListener("click", function () {
+    menuIcon.addEventListener("click", () => {
         navbarList.classList.toggle("show");
         menuIcon.classList.toggle("open");
     });
 
-    function updateJobTitle() {
+    const updateJobTitle = () => {
         const currentJobTitle = jobTitles[currentIndex];
         const typingSpeed = 100;
 
         for (let i = 0; i <= currentJobTitle.length; i++) {
-            setTimeout(function () {
+            setTimeout(() => {
                 jobTitleElement.innerText = currentJobTitle.slice(0, i);
             }, i * typingSpeed);
         }
 
-        setTimeout(function () {
+        setTimeout(() => {
             for (let i = currentJobTitle.length; i >= 0; i--) {
-                setTimeout(function () {
+                setTimeout(() => {
                     jobTitleElement.innerText = currentJobTitle.slice(0, i);
                 }, (currentJobTitle.length - i) * typingSpeed);
             }
@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded", function () {
             currentIndex = (currentIndex + 1) % jobTitles.length;
             setTimeout(updateJobTitle, currentJobTitle.length * typingSpeed);
         }, currentJobTitle.length * typingSpeed + 2000);
-    }
+    };
 
-    function glitchEffect() {
+    const glitchEffect = () => {
         const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?/~`";
 
-        function doGlitch() {
+        const doGlitch = () => {
             let glitchedText = underConstructionElement.innerText;
             const randomIndex = Math.floor(Math.random() * glitchedText.length);
             glitchedText =
@@ -46,14 +46,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 characters[Math.floor(Math.random() * characters.length)] +
                 glitchedText.substring(randomIndex + 1);
             underConstructionElement.innerText = glitchedText;
-        }
+        };
 
-        function reverseGlitch() {
+        const reverseGlitch = () => {
             let originalText = "Website is currently under construction...";
             let glitchedText = underConstructionElement.innerText;
             let currentIndex = glitchedText.length;
 
-            const reverseInterval = setInterval(function () {
+            const reverseInterval = setInterval(() => {
                 if (currentIndex >= 0) {
                     glitchedText = originalText.substring(0, currentIndex) +
                         characters[Math.floor(Math.random() * characters.length)] +
@@ -65,28 +65,28 @@ document.addEventListener("DOMContentLoaded", function () {
                     setTimeout(startNextCycle, 2000);
                 }
             }, 100);
-        }
+        };
 
-        function stopGlitch() {
+        const stopGlitch = () => {
             clearInterval(glitchInterval);
             reverseGlitch();
-        }
+        };
 
-        function startNextCycle() {
-            glitchInterval = setInterval(function () {
+        const startNextCycle = () => {
+            glitchInterval = setInterval(() => {
                 doGlitch();
             }, 25);
-            setTimeout(function () {
+            setTimeout(() => {
                 stopGlitch();
             }, 5000);
-        }
+        };
 
-        setTimeout(function () {
+        setTimeout(() => {
             startNextCycle();
         }, 2000);
-    }
+    };
 
-    function initializeParticles() {
+    const initializeParticles = () => {
         particlesJS('particles-js', {
             "particles": {
                 "number": {
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 "background_size": "cover"
             }
         });
-    }
+    };
 
     initializeParticles();
     updateJobTitle();

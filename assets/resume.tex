@@ -1,0 +1,168 @@
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage[english]{babel}
+\usepackage{latexsym}
+\usepackage{marvosym}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\input{glyphtounicode}
+
+% Page styling
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+% URL styling
+\urlstyle{same}
+
+% Set link color
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+% Text alignment
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}
+{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumePosition}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProject}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#2 & \small\href{#1}{\underline{#3}} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Areeb Ahmed Shariff} \\ \vspace{1pt}
+    \small (+91) 95913-07017 $|$ \href{mailto:areebshariff@acm.org}{\underline{areebshariff@acm.org}} $|$
+    \href{https://linkedin.com/in/areebahmeddd}{\underline{linkedin.com/areebahmeddd}} $|$
+    \href{https://github.com/areebahmeddd}{\underline{github.com/areebahmeddd}}
+\end{center}
+
+%----------EDUCATION----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumePosition
+        {Dayananda Sagar College of Engineering}{Bengaluru, India}
+        {Bachelor of Engineering -- Computer Science and Business Systems}{2022 -- 2026}
+    \resumePosition
+        {Alpine Public School}{Bengaluru, India}
+        {12th Standard}{2020 -- 2022}
+\resumeSubHeadingListEnd
+
+%----------TECHNICAL SKILLS----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2pt]
+    \small{
+        \item{\textbf{Frontend Development}{: JavaScript, HTML, CSS}}
+        \item{\textbf{Developer Tools}{: MySQL, PostgreSQL, MongoDB, Amazon Web Services, Docker, Postman, GitHub}}
+        \item{\textbf{Backend Development}{: Python, Java, Go, SQL}}
+    }
+\end{itemize}
+
+%----------EXPERIENCE----------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumePosition
+        {Student Intern}{October 2023 -- November 2023}
+        {National Institute of Technology Karnataka}{Bengaluru, India}
+    \resumeItemListStart
+        \resumeItem{Conducted API testing using Postman to validate HTTP responses and JSON data.}
+        \resumeItem{Developed to-do web application using HTML, CSS, and JavaScript for task management and organization.}
+        \resumeItem{Developed contact manager web application using MERN (MongoDB, Express.js, React, Node.js) stack, based on a client-server model for centralized contact storage.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------OPEN SOURCE CONTRIBUTION----------
+\section{Open Source Contribution}
+\resumeSubHeadingListStart
+    \resumeProject
+        {https://github.com/areebahmeddd/QuizQuest/commits?author=areebahmeddd}{\textbf{QuizQuest} $|$ \emph{TypeScript, Next.js, Tailwind, Firebase, Vercel}}{Contributions}
+        \resumeItemListStart
+            \resumeItem{Implemented \textbf{quiz lock and delete functionality} in the admin panel.}
+            \resumeItem{Improved admin panel UI with \textbf{default sorting by USN for quiz records}.}
+            \resumeItem{Fixed bugs related to \textbf{incorrect POST request to Firebase in edge cases} and \textbf{inaccurate display of file name during quiz uploads}.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------PROJECTS----------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProject
+        {https://github.com/areebahmeddd/Insight-Ink}{\textbf{Insight Ink} $|$ \emph{Flask, BeautifulSoup, Scikit-learn, Matplotlib, React, AWS Amplify}}{GitHub}
+        \resumeItemListStart
+            \resumeItem{Developed an \textbf{automated feedback system} providing data visualizations on news article sentiment, department-wise distribution, and overall coverage insights from selected news agencies.}
+            \resumeItem{Integrated asynchronous processing using \textbf{asyncio and aiohttp libraries} to scrape articles from national and regional media websites, together with \textbf{OpenAI Whisper API} for parsing YouTube videos.}
+            \resumeItem{Trained \textbf{BERT model} using \textbf{PyTorch framework} on a labelled dataset of news articles for sentiment analysis, achieving an accuracy of 81\%.}
+            \resumeItem{Implemented \textbf{Support Vector Machine algorithm} combined with \textbf{Text Lemmatization} and \textbf{TF-IDF vectorization} to analyze a diverse dataset for department categorization, achieving an accuracy of 95\%.}
+        \resumeItemListEnd
+    \resumeProject
+        {https://github.com/areebahmeddd/Surf}{\textbf{Surf} $|$ \emph{Tkinter, BeautifulSoup, PyTesseract}}{GitHub}
+        \resumeItemListStart
+            \resumeItem{Developed an \textbf{anonymous search engine} performing text and image searches across major engines--Google, Bing, and Yahoo.}
+            \resumeItem{Implemented custom sorting algorithm using \textbf{Heap data structure} to rank top 10 out of 30 search results based on factors such as popularity and recency.}
+            \resumeItem{Integrated proxy functionality using \textbf{PySocks library}, resulting in a 25\% drop in IP address tracking and a 15\% decrease in unauthorized attempts to access search result data.}
+        \resumeItemListEnd
+    \resumeProject
+        {https://github.com/areebahmeddd/Archiva}{\textbf{Archiva} $|$ \emph{Flask, SQLite, Bootstrap}}{GitHub}
+        \resumeItemListStart
+            \resumeItem{Developed a \textbf{cloud-enabled file management system} supporting file upload, view, download, and delete operations on public and private servers.}
+            \resumeItem{Implemented secure authentication using \textbf{project database validation} and session management using \textbf{Flask-Session extension} to prevent unauthorized access during user sign-in and sign-up.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------LEADERSHIP POSITION----------
+\section{Leadership Position}
+\resumeSubHeadingListStart
+    \resumePosition
+        {Founder}{September 2023 -- Present}
+        {Scratch -- Dayananda Sagar Institutions}{Bengaluru, India}
+    \resumeItemListStart
+        \resumeItem{Organizing monthly Hackathons, Ideathons, and more.}
+        \resumeItem{Conducting workshops on technologies such as Spatial Computing, 3D Printing, and more.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
