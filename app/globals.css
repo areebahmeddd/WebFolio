@@ -1,0 +1,71 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+
+  /* Custom properties for shadcn UI */
+  --background: 222 17% 6%; /* #0d0f11 */
+  --foreground: 210 40% 98%; /* Light text for dark background */
+
+  --card: 222 17% 8%; /* Slightly lighter than background */
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222 17% 8%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 210 100% 50%; /* Blue accent color */
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 222 16% 15%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 222 16% 15%;
+  --muted-foreground: 215 20% 65%;
+
+  --accent: 222 16% 15%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 63% 50%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 222 16% 20%;
+  --input: 222 16% 20%;
+  --ring: 210 100% 50%;
+
+  --radius: 0.5rem;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: sans-serif;
+}
+
+.gradient-border {
+  position: relative;
+  display: inline-block; /* Ensures proper bounding */
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+
+.post-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+}
