@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 interface MediumPost {
   id: string;
@@ -29,7 +29,7 @@ export default function PostsList({ posts }: PostsListProps) {
                 href={post.link}
                 className="text-2xl font-semibold hover:text-blue-400"
               >
-                {post.emoji + ' ' + post.title}
+                {post.emoji + " " + post.title}
               </Link>
             </div>
             <div className="mb-2 flex items-center gap-3 text-gray-300">

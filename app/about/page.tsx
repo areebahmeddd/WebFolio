@@ -28,9 +28,9 @@ export default function AboutPage() {
 
       <p>
         I'm currently a student at Dayananda Sagar College of Engineering,
-        pursuing Computer Science and Engineering, while also working as a{' '}
+        pursuing Computer Science and Engineering, while also working as a{" "}
         <strong>
-          DevOps Intern at{' '}
+          DevOps Engineer at{" "}
           <a
             href="https://ohc.network"
             className="text-blue-400 underline hover:text-blue-300"
@@ -42,13 +42,13 @@ export default function AboutPage() {
       </p>
 
       <p>
-        Feel free to{' '}
+        Feel free to{" "}
         <a
           href="mailto:hi@areeb.dev"
           className="text-blue-400 underline hover:text-blue-300"
         >
           reach out
-        </a>{' '}
+        </a>{" "}
         if you'd like to collaborate or just have a chat 🙂
       </p>
     </div>

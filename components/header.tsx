@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,12 +11,12 @@ const Header = () => {
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     }
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     };
   }, [isMenuOpen]);
 
@@ -81,7 +81,7 @@ const Header = () => {
 
       <div
         className={`fixed inset-0 bg-black/95 backdrop-blur-sm transition-all duration-300 md:hidden ${
-          isMenuOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
+          isMenuOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
         <nav className="flex h-full flex-col items-center justify-center space-y-8 p-4 text-2xl">

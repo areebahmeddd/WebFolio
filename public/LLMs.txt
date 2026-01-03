@@ -1,0 +1,27 @@
+# LLMs.txt for areeb.dev
+
+## Website Overview
+Personal portfolio website of Areeb Ahmed.
+
+## Site Structure
+- Home Page (`/`): Landing page with introduction, social links, and recent blog posts
+- About Page (`/about`): Detailed background, experience, and contact information
+- Blogs Page (`/blogs`): Collection of technical articles from Medium (@areebahmeddd)
+- Projects Page (`/projects`): Portfolio of open-source projects and contributions
+
+## Technology Stack
+- Next.js 15 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS
+
+## Contact Information
+- Email: hi@areeb.dev
+- Instagram: https://instagram.com/areebahmeddd
+- Twitter: https://twitter.com/areebahmeddd
+- LinkedIn: https://linkedin.com/in/areebahmeddd
+- GitHub: https://github.com/areebahmeddd
+- Medium: https://medium.com/@areebahmeddd
+
+## License
+MIT License
