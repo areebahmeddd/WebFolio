@@ -1,4 +1,4 @@
-interface MediumPost {
+export interface MediumPost {
   id: string;
   title: string;
   emoji: string;

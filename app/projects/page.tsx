@@ -24,9 +24,9 @@ export default async function ProjectsPage() {
             <div className="mb-2 flex items-center">
               <Link
                 href={project.link}
-                className="text-2xl font-semibold hover:text-blue-400"
+                className="text-2xl font-semibold hover:text-custom-blue"
               >
-                {project.emoji + " " + project.title}
+                {`${project.emoji} ${project.title}`}
               </Link>
             </div>
             <div className="mb-2 text-gray-400">

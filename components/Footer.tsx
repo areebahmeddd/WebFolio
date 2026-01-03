@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="mt-8 md:mt-20">
       <div className="flex items-center justify-between">
-        <div className={"text-gray-400"}>© Areeb Ahmed</div>
+        <div className="text-gray-400">© Areeb Ahmed</div>
         <div className="flex space-x-4">
           <Link
             href="https://instagram.com/areebahmeddd"

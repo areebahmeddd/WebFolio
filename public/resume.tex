@@ -93,9 +93,9 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2pt]
     \small{
-        \item{\textbf{Languages}{: Python, Go, Java, Bash}}
+        \item{\textbf{Languages}{: Python, Go, Bash}}
         \item{\textbf{Frameworks}{: Django, FastAPI, Pytest, Pydantic, SQLAlchemy, SocketIO, Crawl4AI, Streamlit, Gin}}
-        \item{\textbf{Developer Tools}{: Docker, Kubernetes, Terraform, GitHub Actions, Postman, Apache Kafka, AWS}}
+        \item{\textbf{Developer Tools}{: Docker, Kubernetes, OpenTofu, GitHub Actions, AWS, GCP, Monitoring, GitOps}}
     }
 \end{itemize}
 
@@ -103,53 +103,56 @@
 \section{Experience}
 \resumeSubHeadingListStart
     \resumePosition
-        {DevOps Intern}{January 2024 -- Present}
-        {Open Healthcare Network}{Bengaluru, India}
+        {DevOps Engineer}{October 2024 -- Present}
+        {Open Healthcare Network}{Kochi, India}
     \resumeItemListStart
-        \resumeItem{Reviewed and upgraded Kubernetes clusters on \textbf{Google Kubernetes Engine}, ensuring compatibility with newer versions and \textbf{resolving syntax changes} in configurations.}
-        \resumeItem{Automated frontend deployment using \textbf{Terraform}, serving \textbf{static files} via \textbf{Google Cloud Storage} with CDN, ALB, and SSL-enabled security.}
+        \resumeItem{Migrated Kubernetes-based deployment from Google Cloud to Amazon EC2 with \textbf{Docker Swarm}, optimizing infrastructure costs by \textbf{60\%}.}
+        \resumeItem{Automated frontend deployment using \textbf{Terraform}, serving static files via \textbf{Google Cloud Storage} with CDN, ALB, and SSL-enabled security.}
         \resumeItem{Developed \textbf{Bash scripts} to automate backend deployment on \textbf{Azure Container Apps}, integrating PostgreSQL Flexible Server, Redis Cache, and S3-compatible storage via \textbf{Flexify.IO}.}
-        \resumeItem{Updated \textbf{infrastructure documentation} for AWS, GCP, Azure, and DigitalOcean.}
     \resumeItemListEnd
-\resumeSubHeadingListEnd
 
-%--------------------OPEN SOURCE CONTRIBUTION--------------------
-\section{Open Source Contribution}
-\resumeSubHeadingListStart
-    \resumeProject
-        {https://github.com/openfoodfacts/folksonomy_api/commits?author=areebahmeddd}{\textbf{Open Food Facts} $|$ \emph{Pearl, JavaScript, Python, Dart, MongoDB, OVH Cloud}}{Contributions}
-        \resumeItemListStart
-            \resumeItem{Migrated \textbf{dependency management} from pip to Poetry and updated repo installation docs.}
-            \resumeItem{Added support for \textbf{downloading obsolete product dumps} for OFF, OBF, and OPFF flavors.}
-            \resumeItem{Optimized \textbf{HTML meta tags} for the frontend, \textbf{boosting social click-through rate}.}
-        \resumeItemListEnd
+    \resumePosition
+        {Backend Engineer}{October 2025 -- December 2025}
+        {NeoSapien}{Bengaluru, India}
+    \resumeItemListStart
+        \resumeItem{Improved \textbf{Gemini + PyAnnote} speech-to-text pipeline by reducing CER and DER via context engineering, using custom evals against labeled audio benchmarks.}
+        \resumeItem{Migrated \textbf{10+ Express.js} endpoints to \textbf{FastAPI} and updated unit and integration tests in \textbf{Pytest} to align with CI pipeline requirements.}
+        \resumeItem{Prototyped \textbf{Chrome extension} in \textbf{React} within \textbf{24 hours} to validate extending Neo 1 features to online meetings, enabling live audio capture and streaming to backend services.}
+    \resumeItemListEnd
+
+    \resumePosition
+        {Software Consultant}{February 2025 -- April 2025}
+        {Embeddings Corporation}{Remote}
+    \resumeItemListStart
+        \resumeItem{Built RAG-based AI agent with \textbf{Pydantic AI} that streamed responses in real time, crawled sitemaps asynchronously with \textbf{Crawl4AI}, and chunked content by smart boundaries (code blocks, paragraphs).}
+        \resumeItem{Created API-based knowledge management system with \textbf{Gemini 2.5 Pro} for analysis, \textbf{Ollama's nomic-embed-text} for embeddings, and \textbf{Supabase} for vector storage and fast semantic search.}
+        \resumeItem{Updated \textbf{infrastructure documentation} with self-hosting and deployment guides for AWS.}
+    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %--------------------PROJECTS--------------------
 \section{Projects}
 \resumeSubHeadingListStart
     \resumeProject
-        {https://github.com/SpaceTesla/Mivro}{\textbf{Mivro} $|$ \emph{FastAPI, OpenFoodFacts API, Manifest V3, Flutter, Firebase, AWS Fargate}}{GitHub}
+        {https://github.com/areebahmeddd/superbox.ai}{\textbf{superbox.ai} $|$ \emph{Go, Python, React, AWS Lambda, WebSocket API, S3, Fargate}}{GitHub}
+        \resumeItemListStart
+            \resumeItem{Developed \textbf{marketplace for MCP servers} with 5-step automated security pipeline (SonarCloud, Trivy, Bandit, Snyk, GitGuardian) and S3-backed registry for centralized discovery and deployment.}
+            \resumeItem{Engineered hybrid backend with \textbf{Golang REST API} for server management and \textbf{Python CLI} for authentication, security scanning, and tool discovery.}
+            \resumeItem{Designed AWS Lambda–based \textbf{sandboxed execution environment} using WebSocket API Gateway for persistent MCP connections, enabling isolated server execution and real-time JSON-RPC communication.}
+        \resumeItemListEnd
+    \resumeProject
+        {https://github.com/areebahmeddd/cognito.ai}{\textbf{cognito.ai} $|$ \emph{FastAPI, Next.js, Elasticsearch, Vertex AI, MongoDB, Google Compute Engine}}{GitHub}
+        \resumeItemListStart
+            \resumeItem{Developed natural-language \textbf{forensic evidence discovery engine} that enables investigators to query massive UFDR device exports using conversational AI instead of manual data searching.}
+            \resumeItem{Built FastAPI backend with \textbf{Elasticsearch indexing pipeline} to ingest and normalize UFDR data, enabling \textbf{Gemini-based intent analysis} for natural language search over forensic datasets.}
+            \resumeItem{Created \textbf{Next.js dashboard} with TypeScript for case management, PDF report generation for forensic documentation, and NextAuth-based session management using \textbf{MongoDB}.}
+        \resumeItemListEnd
+    \resumeProject
+        {https://github.com/SpaceTesla/Mivro}{\textbf{Mivro} $|$ \emph{Django, OpenFoodFacts API, Manifest V3, Flutter, Firebase, AWS Lightsail}}{GitHub}
         \resumeItemListStart
             \resumeItem{Developed cross-platform app and web extension for \textbf{personalized product profiling} in food, drink, cosmetic, medicine, and pet food categories.}
             \resumeItem{Integrated \textbf{Claude API} to \textbf{categorize nutrients} based on user-specific health data, \textbf{analyse health risks} associated, and \textbf{recommend healthier food options} or lifestyle changes.}
             \resumeItem{Implemented custom searching algorithm using \textbf{fuzzy matching} and \textbf{keyword clustering} techniques to accurately retrieve products from the database based on complex user queries.}
-        \resumeItemListEnd
-    \resumeProject
-        {https://github.com/1MindLabs/crypta-backend}{\textbf{Crypta} $|$ \emph{Django, PyTsk3, MemProcFS, Scapy, TensorFlow, Azure App Service}}{GitHub}
-        \resumeItemListStart
-            \resumeItem{Developed \textbf{automated digital forensics and incident response} (DFIR) \textbf{system} designed for anomaly detection and pattern recognition across system data and network activity.}
-            \resumeItem{Implemented custom \textbf{YARA rules} with LSTM model for \textbf{IoC identification}, achieving 96\% accuracy and 20\% fewer false positives in \textbf{detecting file anomalies}.}
-            \resumeItem{Integrated \textbf{Scapy library} to automate \textbf{network traffic analysis}, identifying anomalies in HTTP requests, DNS queries, and IP packets within packet captures.}
-            \resumeItem{Generated \textbf{summarized results} using \textbf{ReportLab library}, providing real-time data visualization on the dashboard and export options in PDF, JSON, and CSV formats.}
-        \resumeItemListEnd
-    \resumeProject
-        {https://github.com/areebahmeddd/GodsEye}{\textbf{GodsEye} $|$ \emph{Flask, BeautifulSoup, LangChain, Streamlit, MongoDB, Render Cloud}}{GitHub}
-        \resumeItemListStart
-            \resumeItem{Developed \textbf{automated news feedback system} providing data visualizations on news article sentiment, organization-wise distribution, and overall coverage insights from selected news agencies.}
-            \resumeItem{Implemented asynchronous processing using \textbf{Httpx library} to \textbf{scrape articles from various media websites}.}
-            \resumeItem{Integrated \textbf{Gemini API} to \textbf{identify trends} such as trending topics, keywords, and \textbf{analyze sentiment} from the scraped article data.}
-            \resumeItem{Designed UI using \textbf{Streamlit framework} and \textbf{Plotly library} to generate \textbf{dynamic data visualizations} using bar charts, pie charts, line charts, area charts, and more.}
         \resumeItemListEnd
 \resumeSubHeadingListEnd
 

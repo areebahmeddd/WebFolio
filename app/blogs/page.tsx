@@ -24,9 +24,9 @@ export default async function BlogPage() {
             <div className="mb-2 flex items-center">
               <Link
                 href={post.link}
-                className="text-2xl font-semibold hover:text-blue-400"
+                className="text-2xl font-semibold hover:text-custom-blue"
               >
-                {post.emoji + " " + post.title}
+                {`${post.emoji} ${post.title}`}
               </Link>
             </div>
             <div className="mb-2 flex items-center gap-3 text-gray-300">

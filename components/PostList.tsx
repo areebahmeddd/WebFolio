@@ -1,18 +1,5 @@
-"use client";
-
 import Link from "next/link";
-
-interface MediumPost {
-  id: string;
-  title: string;
-  emoji: string;
-  date: string;
-  readingTime: string;
-  category: string;
-  excerpt: string;
-  link: string;
-  thumbnail?: string;
-}
+import type { MediumPost } from "@/lib/medium-api";
 
 interface PostsListProps {
   posts: MediumPost[];
@@ -27,9 +14,9 @@ export default function PostsList({ posts }: PostsListProps) {
             <div className="mb-2 flex items-center">
               <Link
                 href={post.link}
-                className="text-2xl font-semibold hover:text-blue-400"
+                className="text-2xl font-semibold hover:text-custom-blue"
               >
-                {post.emoji + " " + post.title}
+                {`${post.emoji} ${post.title}`}
               </Link>
             </div>
             <div className="mb-2 flex items-center gap-3 text-gray-300">
